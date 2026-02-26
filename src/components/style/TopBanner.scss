@@ -1,0 +1,28 @@
+.TopBanner {
+    position: fixed;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    color: var(--bg);
+    text-align: center;
+    align-content: center;
+    z-index: 6;
+    .swiper {
+        height: 100%;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.closeBtn {
+    position: absolute;
+    right: 2rem;
+    width: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
