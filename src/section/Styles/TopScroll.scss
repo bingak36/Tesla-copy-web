@@ -1,0 +1,49 @@
+.TopScroll-inner {
+  width: 100%;
+  background-color: #FF3D3D; // 배경색 (필요에 따라 #f4f4f4 등으로 변경 가능)
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .top-swiper {
+    width: 100%;
+    height: 40px; // 수직 Swiper는 높이 지정이 필수입니다.
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      a {
+        font-size: 14px;
+        color: #171a20;
+        text-underline-offset: 4px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #000;
+          text-decoration-thickness: 2px;
+        }
+      }
+    }
+  }
+
+  .top-close-btn {
+    border: none;
+    margin-right: 10px;
+
+    background-color: transparent;
+    background-image: url("../../assets/tesla-image/btn_aside_close.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
