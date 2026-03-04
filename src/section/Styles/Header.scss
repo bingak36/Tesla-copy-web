@@ -1,6 +1,13 @@
+.header {
+
+}
+
 .stiky-header {
-    position: relative;
-    background-color: #eee;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
 
@@ -10,10 +17,14 @@
         margin: 0 10px;
         list-style: none;
         display: flex;
-        gap: 10px;
+        gap: 20px;
         align-items: center;
 
         color: #fff;
+
+        a{
+            cursor: pointer;
+        }
     }
 
     .logo {

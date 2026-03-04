@@ -10,6 +10,8 @@ const Header = () => {
   
 
   return (
+    <div className='header'>
+
     <div className='stiky-header'>  
       <ul className='nav-text'>
         {navLinks.map((nav)=>(
@@ -32,7 +34,9 @@ const Header = () => {
           </li>
         ))}
       </ul>
+
     </div>
+        </div>
   )
 }
 
