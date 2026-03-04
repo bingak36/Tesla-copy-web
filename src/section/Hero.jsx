@@ -2,27 +2,31 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Styles/Hero.scss';
+import { heroData } from '../Util/Hero';
 
 
 const Hero = () => {
+  const model = heroData.model
+
   return (
     <div className="hero">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
-        loop={true} // 무한 반복
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        loop={true}
+        className='hero-swiper'
       >
-        <SwiperSlide>
-            <div className="slide-content">Slide 1</div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="slide-content">Slide 2</div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="slide-content">Slide 3</div>
-        </SwiperSlide>
+        {model.map((model)=>(
+          <SwiperSlide key={model.id} className='swiper-slide'>
+              <img src={model.src} alt={model.label} />
+              <div className='swiper-wrap'>
+                <h2>{model.company}</h2>
+                <p>{model.tag01}</p>
+                <p>{model.tag02}</p>
+                <p>{model.button}</p>
+              </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

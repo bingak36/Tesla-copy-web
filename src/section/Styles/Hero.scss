@@ -1,0 +1,30 @@
+.hero {
+    background-color: #eee;
+    height: 100vh;
+
+    .hero-swiper {
+        height: auto;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.swiper-slide {
+    position: relative;
+
+    .swiper-wrap {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        
+        h2 {
+            font-size: 72.7px;
+        }
+    
+
+    }
+}
