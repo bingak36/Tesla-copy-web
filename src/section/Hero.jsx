@@ -21,9 +21,9 @@ const Hero = () => {
               <img src={model.src} alt={model.label} />
               <div className='swiper-wrap'>
                 <h2>{model.company}</h2>
-                <p>{model.tag01}</p>
-                <p>{model.tag02}</p>
-                <p>{model.button}</p>
+                <p id='tag-1'>{model.tag01}</p>
+                <p id='tag-2'>{model.tag02}</p>
+                <p id='tag-3'>{model.button}</p>
               </div>
           </SwiperSlide>
         ))}

@@ -1,6 +1,6 @@
 .hero {
     background-color: #eee;
-    height: 100vh;
+    height: 100%;
 
     .hero-swiper {
         height: auto;
@@ -18,11 +18,24 @@
     .swiper-wrap {
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 30%;
         transform: translate(-50%, -50%);
+        color: #fff;
         
         h2 {
-            font-size: 72.7px;
+            font-size: 70px;
+        }
+        
+        #tag-1 {
+            font-size: 70px;
+        }
+        #tag-2 {
+            font-size: 24px;
+        }
+        #tag-3 {
+            font-size: 20px;
+            padding: 17px 68px;
+            background-color: var(-main-color);
         }
     
 
