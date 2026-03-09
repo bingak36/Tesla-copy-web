@@ -5,8 +5,11 @@
         text-align: center;
         gap: 2rem;
 
-        @media screen and (max-width:1111px) {
-            flex-wrap: wrap;
+        .img-box {
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: #DADADA;
+            border: 
         }
 
         .img-wrap {
@@ -23,14 +26,5 @@
             margin-top: .9rem;
         }
 
-        @media screen and (max-width:599px) {
-                  .img-wrap {
-                    width: 9.5rem;
-                    height: 9.5rem;
-                  }
-                  p{
-                    font-size: 1.2rem;
-                  }
-        }
     }
 }

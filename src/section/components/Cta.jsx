@@ -9,8 +9,9 @@ const Cta = () => {
       <ul className="cta-list">
         {categories.map((c) => (
           <li key={c.id} >
+            <div className='img-box'>
               <div className="img-wrap" style={{ backgroundImage: `url(${c.img.src})` }} />
-
+            </div>
               <p>
                 {c.name}
               </p>
