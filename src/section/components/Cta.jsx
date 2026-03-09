@@ -1,11 +1,22 @@
 import React from 'react'
-import './Styles/Cta.scss'
-
+import { categories } from '../../Util/Cta'
+import './styles/Cta.scss'
 
 const Cta = () => {
+
   return (
-    <div className='Cta'>
-      af
+    <div className='inner cta-inner'>
+      <ul className="cta-list">
+        {categories.map((c) => (
+          <li key={c.id} >
+              <div className="img-wrap" style={{ backgroundImage: `url(${c.img.src})` }} />
+
+              <p>
+                {c.name}
+              </p>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
