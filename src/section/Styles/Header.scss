@@ -1,29 +1,34 @@
 .header {
-
-}
-
-.stiky-header {
-    position: absolute;
+    position: fixed;
     top: 40px;
     width: 100%;
     z-index: 10;
-    background-color: transparent;
+    transition: all .3s;
+}
+
+.sticky-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 
-    height: 40px;
-    
-    ul {
-        margin: 0 10px;
-        list-style: none;
+    .nav-text {
         display: flex;
         gap: 20px;
-        align-items: center;
 
-        color: #fff;
-
-        a{
+        a {
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            padding: 5px;
+            position: relative;
+            font-weight: 500;
             cursor: pointer;
+
         }
     }
 
@@ -34,8 +39,18 @@
         transform: translate(-50%, -50%);
 
         img {
-            width: 200px; // 원하는 크기로 변경하세요
+            width: 200px;
             height: auto;
+        }
+    }
+
+    .nav-icon {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        a {
+            cursor: pointer;
         }
     }
 }

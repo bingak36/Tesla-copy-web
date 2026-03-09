@@ -3,6 +3,7 @@ import './Styles/main.scss'
 import TopScroll from './section/TopScroll'
 import Header from './section/Header'
 import Hero from './section/Hero'
+import Follow from './section/Follow'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <TopScroll />
       <Header/>
       <Hero/>
+      <Follow/>
     </div>
   )
 }

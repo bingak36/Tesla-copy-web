@@ -7,6 +7,7 @@ import { Autoplay } from 'swiper/modules'
 
 const TopScroll = () => {
   const tbData = topBanner.topBanner.items
+  const closebtn = topBanner.button
   return (
     <div className='inner TopScroll-inner'>
     <Swiper
@@ -27,7 +28,9 @@ const TopScroll = () => {
         ))}
     </Swiper>
     
-    <button className='top-close-btn' />
+    <button className='top-close-btn'>
+      <img src={closebtn.src} alt={closebtn.alt} />
+    </button>
 
 
     </div>

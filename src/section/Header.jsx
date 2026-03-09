@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className='header'>
 
-    <div className='stiky-header'>  
+    <div className='sticky-header'>  
       <ul className='nav-text'>
         {navLinks.map((nav)=>(
           <li key={nav.id}>
@@ -36,7 +36,7 @@ const Header = () => {
       </ul>
 
     </div>
-        </div>
+    </div>
   )
 }
 

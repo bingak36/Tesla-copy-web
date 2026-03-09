@@ -19,12 +19,13 @@ const Hero = () => {
         {model.map((model)=>(
           <SwiperSlide key={model.id} className='swiper-slide'>
               <img src={model.src} alt={model.label} />
-              <div className='swiper-wrap'>
-                <h2>{model.company}</h2>
-                <p id='tag-1'>{model.tag01}</p>
-                <p id='tag-2'>{model.tag02}</p>
-                <p id='tag-3'>{model.button}</p>
-              </div>
+              <div className='back-color'/>
+              <ul className='swiper-wrap'>
+                <li>{model.company}</li>
+                <li id='tag-1'>{model.tag01}</li>
+                <li id='tag-2'>{model.tag02}</li>
+                <li id='tag-3'>{model.button}</li>
+              </ul>
           </SwiperSlide>
         ))}
       </Swiper>
