@@ -31,17 +31,20 @@
             height: 100px;
         }
         
-        #tag-1 {
+        .tag-1 {
             font-size: 70px;
         }
-        #tag-2 {
+        .tag-2 {
             font-size: 24px;
         }
-        #tag-3 {
+        .tag-3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: var(--main-color);
-            padding: 17px 30px;
             border-radius: 50px;
-            width: 250px;
+            width: 311px;
+            height: 49px;
 
             font-size: 20px;
             text-align: center;

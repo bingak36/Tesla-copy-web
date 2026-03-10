@@ -1,6 +1,6 @@
 import React from 'react'
 import { categories } from '../../Util/Cta'
-import './styles/Cta.scss'
+import './Styles/Cta.scss'
 
 const Cta = () => {
 

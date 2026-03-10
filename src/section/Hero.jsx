@@ -22,9 +22,13 @@ const Hero = () => {
               <div className='back-color'/>
               <ul className='swiper-wrap'>
                 <li>{model.company}</li>
-                <li id='tag-1'>{model.tag01}</li>
-                <li id='tag-2'>{model.tag02}</li>
-                <li id='tag-3'>{model.button}</li>
+                <li className='tag-1'>{model.tag01}</li>
+                <li className='tag-2'>{model.tag02}</li>
+                <li className='tag-3'>
+                <span>
+                  {model.button}
+                  </span>
+                  </li>
               </ul>
           </SwiperSlide>
         ))}

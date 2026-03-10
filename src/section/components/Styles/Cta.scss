@@ -1,4 +1,6 @@
 .cta-inner {
+    margin: 42.5px 0;
+    
     .cta-list {
         display: flex;
         justify-content: center;
@@ -6,20 +8,26 @@
         gap: 2rem;
 
         .img-box {
-            width: 1.3rem;
-            height: 1.3rem;
-            background-color: #DADADA;
-            border: 
+            position: relative;
+            width: 10rem;
+            height: 10rem;
+            background-color: #dadada;
+            border-radius: 999px;
+
+            .img-wrap {
+                position: absolute;
+                top: 60%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+                width: 13rem;
+                height: 13rem;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                border-radius: 13rem;
+            }
         }
 
-        .img-wrap {
-            width: 13rem;
-            height: 13rem;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            border-radius: 13rem;
-        }
 
         p {
             font-size: 1.5rem;

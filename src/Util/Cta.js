@@ -1,4 +1,4 @@
-const img = (path) => `/img/${path}`;
+const img = (path) => `/tesla-image/${path}`
 export const categories = [
   {
     id: 1,
@@ -39,7 +39,7 @@ export const categories = [
     id: 5,
     name: "모델Y",
     img: {
-      src: img("cCta-car-5.png"),
+      src: img("Cta-car-5.png"),
 
       alt: "모델Y",
     },
