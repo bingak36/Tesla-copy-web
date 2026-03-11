@@ -4,6 +4,14 @@
     width: 100%;
     z-index: 10;
     transition: all .3s;
+
+    &.scrolled {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &.top-up {
+        top: 0;
+    }
 }
 
 .sticky-header {

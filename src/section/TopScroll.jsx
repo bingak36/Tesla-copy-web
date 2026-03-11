@@ -3,13 +3,14 @@ import './Styles/TopScroll.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { topBanner } from '../Util/TopScroll'
 import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
 
 
-const TopScroll = () => {
+const TopScroll = ({ showTopBanner, setShowTopBanner }) => {
   const tbData = topBanner.topBanner.items
   const closebtn = topBanner.button
   return (
-    <div className='inner TopScroll-inner'>
+    <div className={`TopScroll-inner ${!showTopBanner ? 'hidden' : ''}`}>
     <Swiper
       className='top-swiper'
       modules={[Autoplay]}
@@ -28,13 +29,14 @@ const TopScroll = () => {
         ))}
     </Swiper>
     
-    <button className='top-close-btn'>
+    <button className='top-close-btn' onClick={() => setShowTopBanner(false)}>
       <img src={closebtn.src} alt={closebtn.alt} />
     </button>
 
 
     </div>
   )
+
 }
 
 export default TopScroll

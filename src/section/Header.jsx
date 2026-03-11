@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavData } from '../Util/Header'
 import './Styles/Header.scss'
 
-const Header = () => {
+const Header = ({ showTopBanner }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = NavData.menu
   const logo = NavData.logo
   const icon = NavData.icon
   
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className='header'>
+    <div className={`header ${isScrolled ? 'scrolled' : ''} ${!showTopBanner ? 'top-up' : ''}`}>
 
     <div className='sticky-header'>  
       <ul className='nav-text'>
