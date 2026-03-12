@@ -1,26 +1,31 @@
 .hero {
     background-color: #eee;
-    height: 100%;
+    height: 100vh; 
+    position: relative;
 
     .hero-swiper {
-        height: auto;
         width: 100%;
-        img {
-            width: 100%;
-            height: auto;
-        }
+        height: 100vh;
+        position: relative;
     }
 }
 
 .swiper-slide {
-    position: relative;
+    height: 100%; 
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 
     .swiper-wrap {
         position: absolute;
         top: 50%;
         left: 240px;
-        // transform: translate(-50%);
+        transform: translateY(-50%);
         color: #fff;
+        z-index: 10;
+
 
         li:not(:last-child) {
             padding-bottom: 20px;
@@ -41,18 +46,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--main-color);
+            background-color: var(--main-color, #000);
             border-radius: 50px;
             width: 311px;
             height: 49px;
-
             font-size: 20px;
             text-align: center;
-
             cursor: pointer;
         }
-    
-
     }
 
     .back-color {
@@ -62,5 +63,56 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+}
+
+.hero-nav {
+    position: relative;
+    z-index: 11;
+    left: 240px; 
+    bottom: 8.7rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 1111px) {
+        left: 20px;
+        bottom: 3.9rem;
+    }
+
+
+    .swiper-pagination-fraction {
+        width: 5rem;
+        height: 5rem;
+        position: relative;
+        font-size: 0;
+        color: var(--primary, #fff); 
+
+        .swiper-pagination-current {
+            font-size: 2.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .swiper-pagination-total {
+            font-size: 2.2rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 50px;
+            background-color: var(--primary, #fff);
+            left: 10%;
+            top: 40%;
+            transform: rotate(45deg) translate(-50%, -50%);
+        }
     }
 }

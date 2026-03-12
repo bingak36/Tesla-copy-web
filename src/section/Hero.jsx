@@ -1,12 +1,15 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 import './Styles/Hero.scss';
 import { heroData } from '../Util/Hero';
 
-
 const Hero = () => {
-  const model = heroData.model
+  const models = heroData.model;
 
   return (
     <div className="hero">
@@ -16,20 +19,21 @@ const Hero = () => {
         loop={true}
         className='hero-swiper'
       >
-        {model.map((model)=>(
-          <SwiperSlide key={model.id} className='swiper-slide'>
-              <img src={model.src} alt={model.label} />
-              <div className='back-color'/>
-              <ul className='swiper-wrap'>
-                <li>{model.company}</li>
-                <li className='tag-1'>{model.tag01}</li>
-                <li className='tag-2'>{model.tag02}</li>
-                <li className='tag-3'>
-                <span>
-                  {model.button}
-                  </span>
-                  </li>
-              </ul>
+        {models.map((item) => (
+          <SwiperSlide 
+            key={item.id} 
+            style={{ backgroundImage: `url(${item.src})` }}
+            className='swiper-slide'
+          >
+            <div className='back-color'/>
+            <ul className='swiper-wrap'>
+              <li>{item.company}</li>
+              <li className='tag-1'>{item.tag01}</li>
+              <li className='tag-2'>{item.tag02}</li>
+              <li className='tag-3'>
+                <span>{item.button}</span>
+              </li>
+            </ul>
           </SwiperSlide>
         ))}
       </Swiper>
