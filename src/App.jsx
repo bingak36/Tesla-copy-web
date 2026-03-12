@@ -7,6 +7,8 @@ import Hero from './section/Hero'
 import Follow from './section/Follow'
 import Collection from './section/Collection'
 import Introduction from './section/introduction'
+import SNS from './section/SNS'
+import Footer from './section/Footer'
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Follow/>
       <Collection/>
       <Introduction/>
+      <SNS/>
+      <Footer/>
     </div>
   )
 }

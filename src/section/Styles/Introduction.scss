@@ -1,3 +1,51 @@
 .intro {
     height: 767px;
+
+    .wrapper {
+        margin-top: 136px;
+        margin-left:240px;
+        display: flex;
+        gap: 150px;
+
+
+        .text-wrap {
+            margin-top: 76px;
+            
+            div {
+                margin-bottom: 28px;
+                display: flex;
+                align-items: center;
+            }
+            .title {
+                height: 150px;
+                font-size: var(--main-font-size);
+                color: var(--main-color);
+                
+            }
+            .text {
+                font-size: var(--text-font-size);
+                width: 483px;
+            }
+            button {
+                font-size: var(--button-font-size);
+                background-color: var(--main-color);
+                border-radius: 60px;
+                border: none;
+                padding: 18px 60px;
+                color: #fff;
+            }
+        }
+
+        .img-wrap {
+        
+            display: flex;
+            overflow: hidden;
+            gap: 32px;
+            
+            img {
+                min-width: 700px;
+                min-height: 495px;
+            }
+        }
+    }
 }

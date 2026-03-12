@@ -37,9 +37,9 @@ const Collection = () => {
               <div className='text-box'>
                 <p>{item.title}</p>
                 <h3>{item.name}</h3>
-              </div>
               <div className='img-box'>
                 <img src={item.image} alt={item.name} />
+              </div>
               </div>
             </div>
           </SwiperSlide>
