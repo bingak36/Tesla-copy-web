@@ -6,7 +6,7 @@ const Footer = () => {
       <section className='company'>
       <div className='company-logo'></div>
       <div className='company-data'></div>
-      <div className='footerLegal'></div>
+      <div className='company-Legal'></div>
       </section>
 
       <section className='menu'>
