@@ -3,11 +3,10 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
-    height: 630px;
-    gap: auto;
-    margin: 0 240px;
+    width: 100%;
+    margin: 0 auto;
 
-    img {
+    .img-wrap {
         width: 630px;
         height: 630px;
     }

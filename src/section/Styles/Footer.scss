@@ -2,7 +2,7 @@
     height: 500px;
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     
 
@@ -47,6 +47,11 @@
                 font-size: 15px;
             }
         }
+
+        @media screen and (max-width:1440px) {
+            display: none;
+            
+        }
     }
     .customer-center {
         margin-top: 10cqh;
@@ -82,5 +87,11 @@
                 height: 25px;
             }
         }
+    }
+
+    @media screen and (max-width:1440px) {
+        display:block;
+        margin: 30px;
+        
     }
 }

@@ -11,7 +11,9 @@ const Hello = () => {
 
   return (
     <div className='inner Hello'>
+      <div className='img-wrap'>
       <img src={media.src} alt={media.alt} />
+      </div>
       <ul className='hello-wrap'>
         <li>
           {text.text01}

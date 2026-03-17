@@ -21,11 +21,11 @@ const Collection = () => {
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
-          640: {
+          960: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1024: {
+          1440: {
             slidesPerView: 3,
             spaceBetween: 30,
           },

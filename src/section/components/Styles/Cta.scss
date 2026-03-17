@@ -1,9 +1,10 @@
 .cta-inner {
     margin: 42.5px 0;
-    height: 215px;
+
     
     .cta-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         gap: 2rem;
