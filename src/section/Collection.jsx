@@ -32,7 +32,7 @@ const Collection = () => {
         }}
       >
         {collectionData.map((item) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.id} className='SwiperSlide'>
             <div className='collection-card'>
               <div className='text-box'>
                 <p>{item.title}</p>
